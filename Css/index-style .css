@@ -1,0 +1,477 @@
+/* Globel classes */
+.bg-dark-blue{
+    background-color: #4a66ad;
+
+}
+.bg-light-blue{
+    background-color: #89a6d6;
+
+}
+.yellow-color{
+    color: #ffca0a !important;
+}
+*{
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.z-index-9{
+    position: relative;
+    z-index: 11111111;
+}
+nav .nav-right ul li{
+    font-weight: 400;
+    font-size: 16px;
+    color: #808184;
+    font-family: "Inter", sans-serif;
+    margin-left: 27px;
+}
+nav .nav-left a{
+    text-decoration: none;
+  
+    font-weight: 600;
+    font-size: 16px;
+    color: #808184;
+    margin-right: 12px;
+
+}
+.nav-item .active{
+    font-weight: bold;
+    color: #4a54ae !important;
+    text-decoration: underline;
+}
+.left-home h2{
+    font-weight: 700;
+    font-size: 60px;
+    color: #fec909;
+}
+.left-home p{
+    font-family: "Inter", sans-serif;
+    width: 70%;
+    font-weight: 200;
+    font-size: 19px;
+    color: #fff;
+    margin-top: 20px;
+}
+.img-frame{
+    width: 78.7%;
+}
+.reg-btn{
+    border: 4px solid #495496;
+    border-radius: 24px;
+    padding: 9px 24px;
+    width: 200px;
+    height: 48px;
+    color: white;
+    margin-top: 30px;
+}
+header {
+    background: linear-gradient(90deg, #525ea5 0%, #7e96cb 100%);
+    color: white;
+    height: 90vh;
+   
+   
+  
+}
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: rise 10s infinite ease-in-out;
+}
+
+.bubble.small {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(173, 216, 230, 0.5); /* Baby blue */
+}
+
+.bubble.large {
+    width: 110px;
+    height: 110px;
+    background-color: #5f70af; /* Dark blue */
+}
+
+.bubble.small:nth-child(1) {
+    left: 10%;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+
+.bubble.small:nth-child(2) {
+    left: 30%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.bubble.small:nth-child(3) {
+    left: 50%;
+    animation-duration: 12s;
+    animation-delay: 4s;
+}
+
+.bubble.large:nth-child(4) {
+    left: 20%;
+    animation-duration: 14s;
+    animation-delay: 1s;
+}
+
+.bubble.large:nth-child(5) {
+    left: 40%;
+    animation-duration: 16s;
+    animation-delay: 3s;
+}
+
+.bubble.large:nth-child(6) {
+    left: 60%;
+    animation-duration: 18s;
+    animation-delay: 5s;
+}
+
+/* Add more nth-child selectors for more bubbles with different properties */
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(-70vh) scale(1.2);
+        opacity: 0;
+    }
+}
+/* ------------------------------------ End Home Style ------------------------------------ */
+
+/* _______________________________________ Details Style _________________________________ */
+.details .col-md-4 h3{
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffca0b;
+}
+.w-90{
+    width: 90%;
+
+}
+.w-64{
+    width: 64%;
+
+}
+.details .col-md-4 p{
+    margin-top: 15px;
+ 
+    font-weight: 400;
+    font-size: 16px;
+    color: #4a54ae;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ___________________________________ How it Style ___________________________________________________________ */
+
+.how-it{
+    background: linear-gradient(90deg, #525ea5 0%, #7e96cb 100%);
+
+}
+.how-it-img{
+    position: relative;
+    margin-top: 30px;
+}
+.how-it-img h4{
+    position: absolute;
+    top:22%;
+    left:34.5%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+.how-it-img .how-icon{
+    position: absolute;
+    top:40%;
+    left:45%;
+    border-radius: 100%;
+    background-color:#4a66ad ;
+    width:74px;
+    height:74px;
+   
+   
+}
+
+.how-it .title h4{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+   
+}
+.how-it .title p{
+    margin-top: 18px;
+    font-weight: 200;
+    font-size: 17px;
+    color: #fff;
+
+}
+.design-container {
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+    
+  }
+  .item:last-child {
+    margin-bottom: 0;
+  }
+  .item-number {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fab711;
+    flex: 0 0 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 43px;
+  }
+  .item-text {
+    flex: 1;
+  }
+  .item-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
+.item-content{
+    font-weight: 200;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+    
+}
+/* _______________________________________________________________________________________ */
+/* ------------------------ Register Section Style -------------------------------------- */
+.registerSection{
+    margin-top: 80px;
+    background-color: #ffca0a;
+    height: 75%;
+}
+.registerSection .iconReg{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(241, 240, 240, 0.2);
+    border-radius: 100%;
+
+}
+.registerSection .reg-content{
+    height: 100%;
+}
+.registerSection h4{
+    font-weight: 700;
+    font-size: 36px;
+    color: #4a66ad;
+    margin-top: 14px;
+}
+.registerSection p{
+    margin-top: 5px;
+    
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 144%;
+    color: #4a66ad;
+}
+.registerSection form{
+    border: 1px solid #e7e9ed;
+    border-radius: 10px;
+    padding: 32px 25px;
+    
+}
+.registerSection label{
+    font-weight: 700;
+    font-size: 16px;
+    color: #4a66ad;
+    margin-bottom: 5px;
+}
+.registerSection input{
+    border: 1px solid #e7e9ed;
+    border-radius: 8px;
+    padding: 16px 16px 16px 12px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.registerSection button{
+    border-radius: 40px;
+    padding: 11px 129px;
+    background-color: #4a66ad;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #fec909;
+    margin-top: 15px;
+}
+.registerSection button:hover{
+    color: #fec909;
+    background-color: #576da3;
+    transition: all 1s;
+
+}
+
+/* .how-it-img{
+    background-image: url("../images/mo\ 1.svg");
+} */
+/* ---------------------------------------------------------------------------------- */
+/* ____________________________________ Footer ______________________________________ */
+
+
+footer{
+    background-color: #525da5;
+    margin-top: 70px;
+}
+footer span{
+    font-weight: 500;
+    font-size: 14px;
+    color: #89a5d4;
+}
+footer .socialList {
+    margin-top:0px;
+    padding: 0 !important;
+
+}
+footer ul h4{
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 35px;
+
+}
+footer .col-md-2 ul li , footer .col-md-3 ul li {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 25px;
+}
+footer svg{
+    margin-bottom: 45px;
+
+}
+footer .row{
+    border-bottom: 1px solid #6678b6;
+
+}
+footer .endFooter ul li {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fab711;
+    margin-top: 20px;
+}
+
+@media (max-width: 767.98px) {
+    header{
+      
+        height: 70vh;
+    }
+    .left-home p {
+        
+        width: 94%;
+    }
+    .left-home h2{
+       font-size: 35px;
+    }
+    header .img-fluid{
+       display: none;
+        
+    }
+    .bubbles {
+      
+        height: 80.5%;
+        
+    }
+    .how-it .how-it-img svg{
+       
+       width: 100%;
+    }
+    .how-it-img h4{
+        position: absolute;
+        top:25%;
+        left:27%;
+       
+    }
+    .how-it-img .how-icon{
+       
+        top:42%;
+        left:40%; 
+    }
+    .design-container{
+        margin-top: 0px;
+    }
+    
+.how-it .title h4 {
+    
+    font-size: 28px;
+    
+}
+.how-it .title p {
+    
+    font-size: 14px;
+}
+.registerSection{
+   
+    height: auto;
+}
+.registerSection .reg-content{
+    height: auto;
+}
+.registerSection form{
+    margin-top: 30px;
+}
+.details{
+    position: relative;
+    z-index: 111111111111;
+}
+    
+    /* @keyframes rise {
+        0% {
+            transform: translateY(0) scale(1);
+            opacity: 0.8;
+        }
+        50% {
+            opacity: 0.9;
+        }
+        100% {
+            transform: translateY(-70vh) scale(1.2);
+            opacity: 0;
+        }
+    } */
+}
+
+
+
+
